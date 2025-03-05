@@ -1,6 +1,6 @@
 name: shell
 displayName: Shell
-version: 0.0.1
+version: 0.0.2
 scripts: {}
 icon: "./icon.png"
 description: Run shell commands and get its stdout.
