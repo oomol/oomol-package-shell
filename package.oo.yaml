@@ -2,5 +2,5 @@ name: shell
 displayName: Shell
 version: 0.0.1
 scripts: {}
-icon: ":fa6-solid:terminal:currentColor:"
+icon: "./icon.png"
 description: Run shell commands and get its stdout.
