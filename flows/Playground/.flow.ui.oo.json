@@ -1,0 +1,21 @@
+{
+  "nodes": {
+    "shell#2": {
+      "rfNode": {
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    "+javascript#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 484,
+          "y": 5.5
+        }
+      }
+    }
+  }
+}

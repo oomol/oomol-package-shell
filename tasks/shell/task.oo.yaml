@@ -1,0 +1,26 @@
+title: Shell
+icon: ":fa6-solid:terminal:currentColor:"
+executor:
+  name: shell
+inputs_def:
+  - handle: command
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: cwd
+    json_schema:
+      type: string
+      ui:widget: dir
+    value:
+    nullable: true
+  - handle: envs
+    description: format like KEY1=VALUE1,KEY2=VALUE2
+    json_schema:
+      type: string
+      ui:widget: text
+    value:
+    nullable: true
+outputs_def:
+  - handle: stdout
+    json_schema:
+      type: string

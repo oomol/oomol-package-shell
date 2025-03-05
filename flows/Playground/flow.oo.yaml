@@ -1,0 +1,34 @@
+nodes:
+  - task: self::shell
+    title: Test
+    node_id: shell#1
+    inputs_from:
+      - handle: command
+        value: echo $KEY1, $(pwd), $(uname -a)
+      - handle: cwd
+        value: /oomol-driver/oomol-storage/foo
+      - handle: envs
+        value: KEY1=VALUE1
+  - task:
+      ui:
+        default_width: 450
+      inputs_def:
+        - handle: input
+          description: Input
+          json_schema:
+            type: string
+      outputs_def:
+        []
+      executor:
+        name: nodejs
+        options:
+          entry: scriptlets/+javascript#1.js
+    title: "JavaScript #1"
+    icon: ":skill-icons:javascript:"
+    node_id: +javascript#1
+    inputs_from:
+      - handle: input
+        value: ""
+        from_node:
+          - node_id: shell#2
+            output_handle: stdout
