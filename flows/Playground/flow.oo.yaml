@@ -30,5 +30,5 @@ nodes:
       - handle: input
         value: ""
         from_node:
-          - node_id: shell#2
+          - node_id: shell#1
             output_handle: stdout
