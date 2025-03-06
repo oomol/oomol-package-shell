@@ -1,5 +1,5 @@
 title: Shell
-icon: ":fa6-solid:terminal:currentColor:"
+icon: "../../icon.png"
 executor:
   name: shell
 inputs_def:
