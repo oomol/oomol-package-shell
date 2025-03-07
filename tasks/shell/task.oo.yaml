@@ -1,5 +1,5 @@
 title: Shell
-icon: "../../icon.png"
+icon: "../../icon.svg"
 executor:
   name: shell
 inputs_def:
