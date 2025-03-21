@@ -6,3 +6,4 @@ scripts:
 icon: "./icon.svg"
 description: Run shell commands and get its stdout.
 repository: https://github.com/oomol/oomol-package-shell
+releaseType: package
